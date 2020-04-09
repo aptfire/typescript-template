@@ -1,7 +1,7 @@
 # GETTING STARTED WITH THIS TEMPLATE
 There are two ways to get started with this project:
 
-* Option 1 - Download the current master branch via [this link](https://bitbucket.org/aptfire/aws-template/get/master.zip). Do this if you just want a baseline set of files that you can then perform a `git init` on.
+* Option 1 - Download the current master branch via [this link](https://bitbucket.org/aptfire/typescript-template/get/master.zip). Do this if you just want a baseline set of files that you can then perform a `git init` on.
 * Option 2 - Fork the repo. Fork the repo if you care about including the history.
 
 # <<project_name>>
