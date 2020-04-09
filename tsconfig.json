@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "lib": ["es2017"],
+    "removeComments": false,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "target": "es2017",
+    "outDir": "dist",
+    "resolveJsonModule": true
+  },
+  "include": ["./**/*.ts"],
+  "exclude": [
+    "node_modules/**/*",
+    ".serverless/**/*",
+    ".webpack/**/*",
+    "_warmup/**/*",
+    ".vscode/**/*"
+  ]
+}
