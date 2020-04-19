@@ -1,8 +1,5 @@
 # GETTING STARTED WITH THIS TEMPLATE
-There are two ways to get started with this project:
-
-* Option 1 - Download the current master branch via [this link](https://bitbucket.org/aptfire/typescript-template/get/master.zip). Do this if you just want a baseline set of files that you can then perform a `git init` on.
-* Option 2 - Fork the repo. Fork the repo if you care about including the history.
+To create a new project using the template, click the green `Use this template` button at the top of this page.
 
 # <<project_name>>
 The project was created by copying the @aptfire/typescript-template project template. To configure the project you will need to make the following changes:
@@ -41,12 +38,12 @@ Update the following fields in `package.json`:
     ...
     repository: {
         "type": "git",
-        "url": "bitbucket:aptfire/<<project_name>>"
+        "url": "github:jscottarmstrong/<<project_name>>"
     }
     ...
 }
 ```
 
-## Create an `.env.test` File
+## Create `.env` and `.env.test` Files
 Create an `.env.test` file. It will not be checked into git, and it should contain settings specific to your enviroment. It is specifically loaded when running `npm test`.
 
