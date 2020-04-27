@@ -38,7 +38,7 @@ Update the following fields in `package.json`:
     ...
     repository: {
         "type": "git",
-        "url": "github:jscottarmstrong/<<project_name>>"
+        "url": "github:aptfire/<<project_name>>"
     }
     ...
 }
