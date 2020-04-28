@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "",
   "scripts": {
-    "clean": "rm -fr dist",
+    "clean": "rm -fr dist/*",
     "test": "nyc mocha",
     "build": "tsc",
     "lint": "eslint --fix --ignore-path .gitignore \"src/**/*.ts\" \"test/**/*.ts\""
