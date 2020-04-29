@@ -12,7 +12,7 @@
     "lint": "eslint --fix --ignore-path .gitignore 'src/**/*.ts' 'test/**/*.ts'"
   },
   "keywords": [],
-  "author": "Jason S. Armstrong <jason@aptfire.com>",
+  "author": "Aptfire, LLC. <info@aptfire.com>",
   "license": "UNLICENSED",
   "devDependencies": {
     "@istanbuljs/nyc-config-typescript": "^1.0.1",
