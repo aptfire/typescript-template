@@ -57,7 +57,7 @@ The easiest way to configure your environment is to copy the `.env.sample` file 
 The `npm test` command uses `./test/bootstrap.ts` to load configuration settings from an `.env.test` file.
 
 ### .tmignore (macOS only)
-If you would like to better manage how Time Machine tracks changes within your project, you can run the `tmignore` script to prevent Time Machine from
+If you would like to better manage how Time Machine tracks changes within your project, you can run the [tmignore](https://gist.github.com/jscottarmstrong/7b8e7932817c083001fdd42b4de464b1) script to prevent Time Machine from
 backing up the directories specified in the `.tmignore` file (e.g. exclude test run results and `node_modules`)
 
 ## Running the Project
