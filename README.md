@@ -7,7 +7,7 @@ This template is intended to provide a baseline to quickly create other template
 * Prettier/ESLint
 * Compilation with `tsc`
 * Testing with `nyc` and `mocha` via ts-node (will be switching to [ts-node-dev](https://www.npmjs.com/package/ts-node-dev) soon)
-* **COMING SOON:** Out of the box logging configuration for [winstonjs/winston](https://github.com/winstonjs/winston)
+* Out of the box console logging using [winstonjs/winston](https://github.com/winstonjs/winston)
 
 It's not the best configuration out there, but it works for us.
 
