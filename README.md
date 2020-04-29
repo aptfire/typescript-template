@@ -11,6 +11,37 @@ This template is intended to provide a baseline to quickly create other template
 
 This is a configuration that I've found works for me. If there are changes or improvements you'd like to see made, submit an issue and I'll take a look at it.
 
+After you clone/create your repo from the template you'll want to:
+* Update `README.md`
+* Update `package.json`
+
+## Update `README.md`
+Change all occurrence of `<<project_name>>` to the name of your project.
+
+## Update `package.json`
+Update the following fields in `package.json`:
+
+* `name`
+* `description`
+* `author`
+* `repository`
+* `license`
+
+Copy this snippet to your package.json file and update accordingly.
+```
+{
+    ...
+    "license": "UNLICENSED",
+    "repository": {
+        "type": "git",
+        "url": "github:<<team_or_acct>>/<<project_name>>"
+    }
+    ...
+}
+```
+
+**NOTE**: For internal projects, be sure to set license to: `UNLICENSED`.
+
 **After creating your project from this template, delete this line and ***everything*** above it. Update everything below based on your needs.** 
 
 # <<project_name>>
