@@ -1,19 +1,16 @@
 {
   "compilerOptions": {
-    "lib": ["es2017"],
     "removeComments": false,
     "moduleResolution": "node",
     "sourceMap": true,
-    "target": "es2017",
+    "module": "CommonJS",
+    "target": "esnext",
     "outDir": "dist",
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "incremental": true
   },
   "include": ["./**/*.ts"],
   "exclude": [
-    "node_modules/**/*",
-    ".serverless/**/*",
-    ".webpack/**/*",
-    "_warmup/**/*",
-    ".vscode/**/*"
+    "node_modules/**/*"
   ]
 }
