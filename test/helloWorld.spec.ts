@@ -1,6 +1,7 @@
-import { expect } from 'chai'
-import { sayHello } from '../src/helloWorld'
+import { sayHello, sayHelloAsync } from '../src/helloWorld'
 
 describe('helloWorld', () => {
-  it('says hello', () => expect(sayHello()).to.eq('Hi!'))
+  it('says hello', () => sayHello().should.eq('Hi!'))
+
+  it('says hello asynchronously', async () => sayHelloAsync().should.eventually.eq('Hi!'))
 })
