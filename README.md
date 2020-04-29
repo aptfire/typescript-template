@@ -6,54 +6,39 @@ This template is intended to provide a baseline to quickly create other template
 * TypeScript
 * Prettier/ESLint
 * Compilation with `tsc`
-* Testing with `nyc` and `mocha` via ts-node (will be switching to [ts-node-dev](https://www.npmjs.com/package/ts-node-dev) soon)
+* Testing with `nyc` providing code coverage and test execution using `mocha`/`chai` via [ts-node-dev](https://www.npmjs.com/package/ts-node-dev)
 * Out of the box console logging using [winstonjs/winston](https://github.com/winstonjs/winston)
 
-It's not the best configuration out there, but it works for us.
+This is a configuration that I've found works for me. If there are changes or improvements you'd like to see made, submit an issue and I'll take a look at it.
+
+**After creating your project from this template, delete this line and ***everything*** above it. Update everything below based on your needs.** 
 
 # <<project_name>>
-The project was created by copying the @aptfire/typescript-template project template. To configure the project you will need to make the following changes:
+## Configuring the Local Environment
 
-* Update `README.md`
-* Update `package.json`
-* Create an `.env.test` file
+### Environment Variables
+The easiest way to configure your environment is to copy the `.env.sample` file to `.env` and adjust according to your local environment.
 
-# `.tmignore` File
-If you have the `tmignore` script installed on your macOS machine, run the command to exclude the directories mentioned in the `.tmignore` file from  being included in Time Machine backups (e.g. `node_modules`).
+The `npm test` command uses `./test/bootstrap.ts` to load configuration settings from an `.env.test` file.
 
-# Running the Project
+### .tmignore (macOS only)
+If you would like to better manage how Time Machine tracks changes within your project, you can run the `tmignore` script to prevent Time Machine from
+backing up the directories specified in the `.tmignore` file (e.g. exclude test run results and `node_modules`)
+
+## Running the Project
 To verify your environment do the following:
 
 ```
 npm i
 npm test
-npm run start
 ```
 
 You should see all tests pass successfully.
 
-## Update `README.md`
-Change all occurrence of `<<project_name>>` to the name of your project.
+To start the app run either: 
 
-## Update `package.json`
-Update the following fields in `package.json`:
+* `npm run build && npm run start` - Compiles using tsc and then starts the app without a watcher 
+* `npm run start:watch` - This will use `ts-node-dev` to transpile only along with watching for any changes within the `src` directory. 
 
-* `name`
-* `description`
-* `author`
-* `repository`
-
-```
-{
-    ...
-    repository: {
-        "type": "git",
-        "url": "github:aptfire/<<project_name>>"
-    }
-    ...
-}
-```
-
-## Create `.env` and `.env.test` Files
-Create an `.env.test` file. It will not be checked into git, and it should contain settings specific to your enviroment. It is specifically loaded when running `npm test`.
+***NOTE:*** The start scripts use the `-r dotenv/config` setting and will default to using the `.env` file if it's available; the test script uses `.env.test`
 
