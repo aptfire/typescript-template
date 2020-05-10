@@ -4,7 +4,7 @@
     "moduleResolution": "node",
     "sourceMap": true,
     "module": "CommonJS",
-    "target": "esnext",
+    "target": "ES2018",
     "outDir": "dist",
     "resolveJsonModule": true,
     "incremental": true
