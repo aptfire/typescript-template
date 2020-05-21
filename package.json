@@ -14,12 +14,16 @@
   "keywords": [],
   "author": "Aptfire, LLC. <info@aptfire.com>",
   "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "github:aptfire/typescript-template.git"
+  },
   "devDependencies": {
-    "@fluffy-spoon/substitute": "^1.134.0",
     "@istanbuljs/nyc-config-typescript": "^1.0.1",
     "@types/chai": "^4.2.11",
     "@types/chai-as-promised": "^7.1.2",
     "@types/chai-like": "^1.1.0",
+    "@types/chai-spies": "^1.0.1",
     "@types/mocha": "^7.0.2",
     "@types/node": "^13.11.1",
     "@typescript-eslint/eslint-plugin": "^2.27.0",
@@ -27,6 +31,7 @@
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "chai-like": "^1.1.1",
+    "chai-spies": "^1.0.0",
     "dotenv": "^8.2.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.1",
