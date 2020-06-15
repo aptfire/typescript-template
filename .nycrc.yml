@@ -1,7 +1,8 @@
 extends: '@istanbuljs/nyc-config-typescript'
 all: true
 include:
-    - src/**
+  - src/**
 exclude:
-    - src/SetupPackage.ts
-    - src/controllers/**
+  - src/SetupPackage.ts
+extension:
+  - '.ts'

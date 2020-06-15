@@ -1,6 +1,0 @@
-recurisve: true
-require:
-  - ts-node/register/transpile-only
-  - source-map-support/register
-  - test/bootstrap.ts
-spec: 'test/**/*.spec.ts'
