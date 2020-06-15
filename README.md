@@ -52,27 +52,20 @@ Copy this snippet to your package.json file and update accordingly.
 ## Configuring the Local Environment
 
 ### Environment Variables
-The easiest way to configure your environment is to copy the `.env.sample` file to `.env` and adjust according to your local environment.
-
-The following commands can be used to test the code:
-
-* `npm test` - Run tests and output format via [`tape`](https://github.com/substack/tape) and [`tap-diff`](https://github.com/axross/tap-diff)
-* `npm run test:coverage` - Run unit test results through `nyc`
-* `npm run test:raw` - Output raw `tap` results
+The easiest way to configure your environment is to copy the `.env.sample` file to `.env` and `.env.test`; adjust according to your local environment.
 
 ### .tmignore (macOS only)
 If you would like to better manage how Time Machine tracks changes within your project, you can run the [tmignore](https://gist.github.com/jscottarmstrong/7b8e7932817c083001fdd42b4de464b1) script to prevent Time Machine from
 backing up the directories specified in the `.tmignore` file (e.g. exclude test run results and `node_modules`)
 
 ## Running the Project
-To verify your environment do the following:
+The following commands can be used to test the code:
 
-```
-npm i
-npm test
-```
+* `npm test` - Run tests and output format via [`tape`](https://github.com/substack/tape) and [`tap-diff`](https://github.com/axross/tap-diff)
+* `npm run test:coverage` - Run unit test results through `nyc`
+* `npm run test:raw` - Output raw `tap` results
 
-You should see all tests pass successfully.
+***NOTE:*** Environment variables are pulled from `.env.test` via the `./test/bootstrap.ts` file.
 
 To start the app run either: 
 
