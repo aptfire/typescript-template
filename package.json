@@ -5,9 +5,9 @@
   "main": "dist/src/index.js",
   "scripts": {
     "clean": "rm -fr dist/*",
-    "test:run": "tape -r ts-node/register/transpile-only -r source-map-support/register -r ./test/bootstrap 'test/**/*.test.ts'",
-    "test": "npm run test:run | tap-diff",
-    "test:coverage": "nyc npm run test:run",
+    "test:raw": "tape -r ts-node/register/transpile-only -r source-map-support/register -r ./test/bootstrap 'test/**/*.test.ts'",
+    "test": "npm run test:raw | tap-diff",
+    "test:coverage": "nyc npm run test:raw",
     "build": "tsc",
     "start": "node -r dotenv/config .",
     "start:watch": "ts-node-dev --transpileOnly -r dotenv/config src/index.ts",

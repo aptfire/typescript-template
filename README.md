@@ -8,10 +8,10 @@ This template is intended to provide a baseline to quickly create other template
 * TypeScript
 * Prettier/ESLint
 * Compilation with `tsc`
-* Testing with `nyc` providing code coverage and test execution using `mocha`/`chai` via [ts-node-dev](https://www.npmjs.com/package/ts-node-dev)
+* Testing with `nyc` providing code coverage and test execution using [tape](https://github.com/substack/tape) via [ts-node](https://www.npmjs.com/package/ts-node)
 * Out of the box console logging using [winstonjs/winston](https://github.com/winstonjs/winston)
 
-This is a configuration that I've found works for us. If there are changes or improvements you'd like to see made, submit an issue and we'll take a look at it.
+This is a configuration that we've found works for us. If there are changes or improvements you'd like to see made, submit an issue and we'll take a look at it.
 
 After you clone/create your repo from the template you'll want to:
 * Update `README.md`
@@ -54,7 +54,11 @@ Copy this snippet to your package.json file and update accordingly.
 ### Environment Variables
 The easiest way to configure your environment is to copy the `.env.sample` file to `.env` and adjust according to your local environment.
 
-The `npm test` command uses `./test/bootstrap.ts` to load configuration settings from an `.env.test` file.
+The following commands can be used to test the code:
+
+* `npm test` - Run tests and output format via [`tape`](https://github.com/substack/tape) and [`tap-diff`](https://github.com/axross/tap-diff)
+* `npm run test:coverage` - Run unit test results through `nyc`
+* `npm run test:raw` - Output raw `tap` results
 
 ### .tmignore (macOS only)
 If you would like to better manage how Time Machine tracks changes within your project, you can run the [tmignore](https://gist.github.com/jscottarmstrong/7b8e7932817c083001fdd42b4de464b1) script to prevent Time Machine from
