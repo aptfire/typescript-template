@@ -1,5 +1,5 @@
-import logger from './config/logger'
-import { sayHello } from './helloWorld'
+import logger from '@/config/logger'
+import { sayHello } from '@/helloWorld'
 
 logger.info('Getting ready to say hello.')
 

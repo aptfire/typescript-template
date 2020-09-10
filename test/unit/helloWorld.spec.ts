@@ -1,4 +1,4 @@
-import { sayHello, sayHelloAsync } from '../src/helloWorld'
+import { sayHello, sayHelloAsync } from '@/helloWorld'
 
 describe('helloWorld', () => {
   it('says hello', () => sayHello().should.eq('Hi!'))
