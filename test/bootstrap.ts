@@ -1,8 +1,8 @@
 import { config } from 'dotenv'
-import * as chai from 'chai'
-import * as chaiAsPromised from 'chai-as-promised'
-import * as chaiLike from 'chai-like'
-import * as chaiSpies from 'chai-spies'
+import chai from 'chai'
+import chaiAsPromised from 'chai-as-promised'
+import chaiLike from 'chai-like'
+import chaiSpies from 'chai-spies'
 
 chai.should()
 chai.use(chaiAsPromised)

@@ -1,0 +1,10 @@
+{
+   "all": true,
+   "include": [
+      "src/**"
+   ],
+   "exclude": [
+      "test/**",
+      "src/SetupPackage.ts"
+   ]
+}

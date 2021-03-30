@@ -2,9 +2,11 @@
   "compilerOptions": {
     "removeComments": true,
     "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "module": "CommonJS",
-    "target": "ES2018",
+    "target": "esnext",
     "outDir": "dist",
     "resolveJsonModule": true,
     "incremental": true,

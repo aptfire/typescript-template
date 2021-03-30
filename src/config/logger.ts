@@ -1,4 +1,4 @@
-import * as winston from 'winston'
+import winston from 'winston'
 
 // TODO: Uncomment the following line to initialize file-based logging.
 // const files = new winston.transports.File({ filename: `./logs/${new Date().toJSON().replace(/T.*$/g, '')}.log` })
